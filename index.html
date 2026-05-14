@@ -833,6 +833,90 @@
       line-height: 1.74;
     }
 
+  
+    /* v15 mobile responsive fix */
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    @media (max-width: 980px) {
+      .nearby-grid,
+      .review-grid,
+      .ai-summary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-card,
+      .nearby-card,
+      .ai-summary-item {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .section-inner {
+        max-width: 100%;
+      }
+
+      .ai-summary {
+        padding: 28px 20px;
+        border-radius: 28px;
+      }
+
+      .ai-summary-grid,
+      .nearby-grid,
+      .review-grid {
+        gap: 16px;
+        margin-top: 24px;
+      }
+
+      .ai-summary-item,
+      .nearby-card,
+      .review-card,
+      .faq-item {
+        padding: 22px 20px;
+        border-radius: 26px;
+      }
+
+      .ai-summary-item span {
+        font-size: 17px;
+        line-height: 1.55;
+      }
+
+      .nearby-card h3,
+      .faq-item h3 {
+        font-size: 22px;
+        line-height: 1.35;
+      }
+
+      .nearby-card p,
+      .faq-item p,
+      .review-card blockquote {
+        font-size: 16px;
+        line-height: 1.68;
+      }
+
+      .review-card .review-source,
+      .review-note {
+        font-size: 13px;
+      }
+
+      .nearby-note {
+        padding: 24px 20px;
+        border-radius: 26px;
+      }
+
+      .nearby-note strong {
+        font-size: 20px;
+      }
+
+      .nearby-note p {
+        font-size: 16px;
+      }
+    }
+
   </style>
 <script type="application/ld+json">
 {
